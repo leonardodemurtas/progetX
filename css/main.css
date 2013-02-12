@@ -1,0 +1,671 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+   margin: 0;
+   background: #F7E4D5;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Leonardo D - Zero Computing Srl
+   Style Sheet
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,700,600);
+
+*{
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.mainContainer{
+	display: block;
+	width: 100%;
+	height: 100% !important;
+	min-height: 1400px;
+	padding: 0;
+	margin: 0;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	border: solid thin 1px;
+}
+
+.footer{
+	background-color: #F5DECD;
+	border-top: 1px solid #FFF8EC;
+	width: 100%;
+	height: auto;
+	padding: 5px 0 10px 0;
+}
+
+.footer p{
+	
+	color: #5F5F61;
+	font-size: 12px;
+}
+
+.credits{	
+	position: relative;
+	display: block;
+	border: solid thin 1px;
+	
+	padding: 0 0 5px 0;
+	border-bottom: 1px #C0AA99 solid;
+	font-size: 13px;
+	color: #3F3F40;
+}
+
+.clearBoth{
+	clear: both;
+}
+
+.center{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.credits ul, .header ul{
+	float: right;
+	list-style: none;
+}
+
+.credits span{
+	float: left;
+}
+
+.credits ul li, .header ul li{
+	float: left;
+}
+
+.credits ul li a {
+	text-transform: capitalize;
+	margin: 0 0 0 10px;
+	font-size: 11px;
+	color: #3F3F3F !important;
+}
+
+.credits ul li a:hover{
+	color:#666 !important;
+}
+
+
+.header div.logo{
+	float: left;
+	height: 94px;
+	width: 341px;
+	background-image: url(../img/logo.png);
+	margin: 30px 0 20px 0;
+}
+
+.header ul{
+	float: right;
+}
+
+.header ul li a {
+	text-transform: capitalize;
+	margin: 0 0 0 10px;
+	font-size: 11px;
+	color: white !important;
+	text-decoration: none;
+}
+
+.search{
+	
+}
+
+.search .pannel {
+	width: 255px;
+	height: 353px;
+	background-color: #FFD657;
+	border-right: 3px solid #FAA52F;
+	margin-right: 2px;
+	
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+}
+
+.search select, .search label  {
+	display: block;
+	width: 195px;
+	margin: 0 auto;
+}
+
+.search label {
+	font-size: 12px;
+	text-align: left;
+	color: #0052A6;
+	padding: 10px 0 0 0;
+}
+
+
+
+.search form{
+	background-color: #F8CF53;
+	border-top: solid 1px #FFEA0F;
+	border-bottom:  solid 1px #FFEA0F;
+	padding: 0 0 15px 0;
+	
+}
+
+.search form input[type="submit"]{
+	display: block;
+	width: 194px;
+	height: 30px;
+	float: left;
+	margin: 30px 0 0 30px;
+}
+
+
+.bluebutton{
+	font-size: 23;
+	text-transform:uppercase;
+	color: white;
+	font-weight: 600;
+	
+	border: solid 1px #0054A9;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow:  0px 1px 1px #6CA6E1 inset, 1px 0px -1px #004081 inset;	
+	box-shadow: 0px 1px 1px #6CA6E1 inset, 1px 0px -1px #004081 inset;
+	
+	background: #0065cb; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjVjYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDUzYTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2RiOWU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #0065cb 0%, #0053a8 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0065cb), color-stop(100%,#0053a8), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0065cb 0%,#0053a8 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0065cb 0%,#0053a8 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0065cb 0%,#0053a8 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0065cb 0%,#0053a8 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065cb', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+}
+
+
+.bluebutton:hover{
+	-webkit-box-shadow:  none;	
+	box-shadow: none;
+	background: #0056ab !important;
+}
+
+.yellowButton{
+	font-size: 18px;
+	text-transform:uppercase;
+	color: #0052A6;
+	text-decoration: none;
+	font-weight: 600;
+	
+	border: solid 1px #F1C950;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow:  0px 1px 1px #FFEDC2 inset, 1px 0px -1px #B89A3D inset;	
+	box-shadow: 0px 1px 1px #FFEDC2 inset, 1px 0px -1px #B89A3D inset;
+	
+	background: #fdd456; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkZDQ1NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGM4NTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2RiOWU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #fdd456 0%, #f0c850 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdd456), color-stop(100%,#f0c850), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fdd456 0%,#f0c850 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fdd456 0%,#f0c850 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fdd456 0%,#f0c850 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fdd456 0%,#f0c850 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd456', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+
+}
+.yellowButton:hover{
+	-webkit-box-shadow:  none;	
+	-webkit-box-shadow:  0px 1px 1px #B89A3D inset, 1px 0px -1px #FFEDC2 inset;	
+	box-shadow: 0px 1px 1px #B89A3D inset, 1px 0px -1px #FFEDC2 inset;
+	background: #F0C850 !important;
+}
+
+
+
+.lastminutePrice a{
+	width: 120px;
+	min-width: 120px;
+	height: 32px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+
+.showCase{
+	display: block;
+	width: 340px;
+	height: 170px;
+	float: left; 
+	margin:0px 0 12px 10px;
+	background: white;
+}
+
+.pannel span{
+	display: block;
+	width: 100%;
+	font-size: 19px;
+	color: #0058B1;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 7px 0 5px 0;
+	font-weight: 700;
+}
+
+.lastminute{
+	padding:  20px 0 0 0;
+}
+
+.tableLastminute{
+	background-color: white;
+	width: 100%;
+}
+
+.headerLabel{
+	color: white !important;
+	font-size: 12px;
+	background-color: #004489;
+	font-weight: 400 !important;
+	height: 24px !important;
+	border-top: 1px solid #003973;
+}
+
+.tableLastminute tr{
+	height: 56px;
+	border-bottom: #DEDEDE 1px solid;
+	font-size: 14px;
+	color: #404041;
+}
+
+.tableLastminute tr th{
+	text-align: left;
+	font-weight: 400 !important;
+	padding: 0 0 0 15px;
+}
+
+.tableLastminute tr td{
+	border-bottom: solid 1px #DEDEDE;
+	padding: 0 0 0 15px;
+	font-size: 13px;
+}
+
+.headerLastminute{
+	height: 70px;
+	background-color: #0053A7;
+	
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.headerLastminute span{
+	display: block;
+	float: right;
+	font-size: 28px;
+	margin: 16px 10px 0 0;
+	color: white;
+}
+
+.informative{
+	display: block;
+	width: 960px;
+	height: 53px;
+	background-image: url(../img/bg-informative.png);
+	
+	margin-top: 15px;
+	
+		box-shadow: 0px 0px 4px #ccc;
+	
+	
+	-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+	
+}
+
+.informative ul {
+	list-style: none;
+}
+
+.headerInformative{
+	display: block;
+	float:left;
+	background-image: url(../img/header-informative.png); 
+	width: 160px;
+	height:65px;
+	background-repeat: no-repeat;
+
+}
+
+.headerInformative span{
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	text-shadow: black 1px 1px 2px;
+	margin: 14px 0 0 14px;
+display: block;
+}
+
+.noborderLeft {
+	border-left: none !important; 
+}
+
+.noborderRight{
+	border-right: none !important; 
+}
+
+.broadcast{
+	display: block;
+	margin-top: 15px ;
+}
+
+.informative ul li {
+	display: block;
+	float: left;
+	border-right: 1px solid #E6E5E6;
+	border-left: 1px solid #FFFFFF; 
+	height: 52px;
+	margin: 0px;
+	line-height: 50px;
+	padding: 0 10px 0 10px;
+}
+
+.informative ul li a{
+	font-size: 14px;
+	color: #404041;
+}
+
+.informative ul li a:hover{
+	color: #ccc;
+}
+
+.informazioni-box{
+	display: block;
+	float: left;
+	width: 282px;
+	height: auto;
+	min-height: 278px;
+	background-image: url(../img/box-informative.png);
+}
+
+.informazioni-box span{
+	text-transform: uppercase;
+	color: #0052A5;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.informazioni-box ul{
+	list-style: none;
+	padding: 10px;
+}
+
+
+.informazioni-box ul li{
+	border-top: dotted 1px #91969C;
+	height: 36px;
+}
+
+.informazioni-box ul li:after{
+	float: right;
+	margin: 7px 0 0 0;
+	content: url(../img/goArrow.png);
+}
+
+.informazioni-box ul li a{
+	line-height: 33px;
+font-size: 13px;
+color: black;
+text-decoration: none;
+}
+
+.informazioni-box ul li a:hover{
+	color:  #0052A5;
+	}
+
+
+
+
+
+
+
+
+
+
+
