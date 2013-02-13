@@ -922,14 +922,14 @@ height: 28px !important;
 
 .resultItem .infoItem span {
 	display: block;
-	width: 185px;
+	width: 25%;
 	float: left;
 	font-size: 13px;
 	margin: 5px 0 0 0;
 	text-align: center;
 }
 
-.resultItem h2 {
+.resultItem h2 a {
 	display: block;
 	color: #0057AC;
 	font-size: 26px;
@@ -938,20 +938,165 @@ height: 28px !important;
 	margin: 0px !important;
 }
 
+.photoItem{
+	display: block;
+	width: 180px;
+	
+	float: left;
+	margin: 3px;
+	
+}
+
+.photoItem div{
+	display:  block;
+	height: 90px !important;
+}
+
+.tableItem{
+	display: block;
+	width: 447px;
+	float: left;
+	margin: 3px;	
+}
+
+.priceItem{
+	display: block;
+	width: 130px;
+	height: 130px;
+	background-color: #0057AC;
+	float: left;
+	margin: 3px;
+}
+
+.detailTablePrice{
+width: 100%;
+}
+
+.detailTablePrice th{
+	
+}
+
+/*.detailTablePrice tr{
+	border-bottom: 1px solid #FFC834;
+	border-top: 1px solid #FFC834;
+}*/
+
+
+.detailTable-head{
+	display: block;
+	border-bottom: 1px solid #FFC834;
+	border-top: 1px solid #FFC834;
+	height: 26px;
+	
+}
+
+
+.detailTable-head-row{
+	width: 447px;
+	background-color: #FFD657;
+	border-bottom: 1px solid white !important;
+	border-top: 1px solid white !important;
+	height: 24px;
+}
+
+
+tr.detailTable-month {
+	width: 443px;
+	background-color: #FFE282;
+	border-bottom: 1px solid #FFC834 !important;
+	border-top: 1px solid white !important;
+	height: 26px;
+}
 
 
 
+.detailTable-month th{
+	/*width: 22%;*/
+}
+
+.detailTable-price td{
+	
+	width: 16%;
+}
 
 
 
+.detailTable-price {
+border-top: 1px solid #FFC834;
+border-bottom: 1px solid #FFC834;
+height: 26px;
+}
+
+.detailTable-price td span {
+font-size: 12px;
+}
+
+.meseIndietro, .meseAvanti{
+	 float: left;
+	 font-size: 12px;
+	 color: #0053A7;
+	 text-decoration: none;
+	 padding: 4px;
+}
+
+.meseAvanti {
+	float: right;
+}
+
+.detailTable-head span{
+	margin: 0 auto;
+	float: left;
+	height: 10px;
+	width: 320px;
+	font-size: 13px;
+	color: #0053A7;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px 0 0 0;
+	font-weight: 600;
+	}
+
+.detailTable-month th span a{
+	font-size: 12px !important;
+	color: #404041;
+}
 
 
+.detailTable-month th span a:hover{
+	color: #0053A7;
+}
 
+.detailTable-price td a{
+	font-size: 12px !important;
+	color: #0052A6;
+	text-align: center;
+	display: block;
+}
 
+.detailTable-price td a:hover{
+	
+	color: #404041;
+	
+}
 
+.priceItem h2{
+	display: block;
+	width: 100%;
+	color: white;
+	font-size: 13px;
+	padding: 3px 0 0 0 !important;
+	text-align: center;
+}
 
-
-
+.priceItem small {
+	font-size: 22px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	color: white;
+	margin: 20px 0 0 0;
+}
 
 
 
